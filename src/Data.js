@@ -30,7 +30,7 @@ export default class Data {
     return fetch(url, options);
   }
 
-  async getUser(username, passoword) {
+  async getUser(username, password) {
     const response = await this.api(`/users`, "GET", null, true, {
       username,
       password
